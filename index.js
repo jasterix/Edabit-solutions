@@ -23,4 +23,19 @@ const addUp = num => {
   return num + addUp(num-1)
 }
 
-addUp(13)
+// addUp(13)
+
+const charCount = (myChar, str) => {
+  let stringArr= str.toLowerCase().split("")
+  let char = 0
+  stringArr.map(x=> {
+    if (x===myChar){
+    char+=1
+    }
+  })
+  return char
+}
+
+
+charCount("c", "Chamber of secrets")
+charCount('f', 'frank and his friends have offered five foxes for sale')
