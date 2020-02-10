@@ -35,7 +35,16 @@ const charCount = (myChar, str) => {
   })
   return char
 }
-
+function charCount(myChar, str) {
+  let stringArr= str.split("")
+  let char = 0
+  stringArr.map(x=> {
+    if (x===myChar){
+    char+=1
+    }
+  })
+  return char
+}
 
 charCount("c", "Chamber of secrets")
 charCount('f', 'frank and his friends have offered five foxes for sale')
