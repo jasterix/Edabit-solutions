@@ -1,0 +1,7 @@
+
+const sumDigits =(num)=> {
+  const numArr = num.split(")
+  console.log(numArr)
+}
+
+sumDigits(184)
