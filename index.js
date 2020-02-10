@@ -14,4 +14,13 @@ const sumDigits =(num)=> {
   return result
 }
 
-sumDigits(184)
+// sumDigits(184)
+
+const addUp = num => {
+  if (num===1){
+    return 1
+  }
+  return num + addUp(num-1)
+}
+
+addUp(13)
